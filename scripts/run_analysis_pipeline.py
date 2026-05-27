@@ -10,6 +10,7 @@ REQUIRED_OUTPUTS = [
     Path("analysis/charts/revenue_by_pipeline_stage.png"),
     Path("analysis/charts/top_campaigns_by_leads.png"),
     Path("analysis/charts/lost_reasons.png"),
+    Path("dashboard/clinic_leads_dashboard.html"),
 ]
 
 
@@ -38,6 +39,7 @@ def main() -> None:
 
     run_command([sys.executable, "scripts/analyze_clinic_leads.py"])
     run_command([sys.executable, "scripts/generate_clinic_leads_charts.py"])
+    run_command([sys.executable, "scripts/generate_html_dashboard.py"])
 
     validate_outputs()
 
