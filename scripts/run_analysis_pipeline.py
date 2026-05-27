@@ -11,6 +11,12 @@ REQUIRED_OUTPUTS = [
     Path("analysis/charts/top_campaigns_by_leads.png"),
     Path("analysis/charts/lost_reasons.png"),
     Path("dashboard/clinic_leads_dashboard.html"),
+    Path("analysis/003-campaign-roi-analysis.md"),
+    Path("analysis/charts/campaign_roi/campaign_leads_count.png"),
+    Path("analysis/charts/campaign_roi/campaign_potential_revenue.png"),
+    Path("analysis/charts/campaign_roi/campaign_won_revenue.png"),
+    Path("analysis/charts/campaign_roi/campaign_conversion_rate.png"),
+    Path("analysis/charts/campaign_roi/campaign_estimated_roi.png"),
 ]
 
 
@@ -40,6 +46,7 @@ def main() -> None:
     run_command([sys.executable, "scripts/analyze_clinic_leads.py"])
     run_command([sys.executable, "scripts/generate_clinic_leads_charts.py"])
     run_command([sys.executable, "scripts/generate_html_dashboard.py"])
+    run_command([sys.executable, "scripts/analyze_campaign_roi.py"])
 
     validate_outputs()
 
