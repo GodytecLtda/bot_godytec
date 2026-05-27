@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Godytec - Dashboard de Leads Odontológicos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #1f2937;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 32px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #d1d5db;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 32px auto;
+      padding: 0 24px;
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 14px;
+      color: #6b7280;
+      text-transform: uppercase;
+    }
+
+    .card .value {
+      margin-top: 10px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #111827;
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin: 32px 0 16px;
+    }
+
+    .chart-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+      gap: 24px;
+    }
+
+    .chart-card {
+      background: white;
+      border-radius: 14px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .chart-card h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .chart-card img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .insight {
+      background: #ecfdf5;
+      border-left: 6px solid #10b981;
+      padding: 18px;
+      border-radius: 10px;
+      margin-bottom: 32px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Godytec - Dashboard de Leads Odontológicos</h1>
+    <p>Análise simulada do funil B2B para captação de consultórios odontológicos via GoHighLevel</p>
+  </header>
+
+  <main>
+    <section class="kpi-grid">
+      <div class="card">
+        <h3>Total de Leads</h3>
+        <div class="value">100</div>
+      </div>
+
+      <div class="card">
+        <h3>Leads Ganhos</h3>
+        <div class="value">10</div>
+      </div>
+
+      <div class="card">
+        <h3>Leads Perdidos</h3>
+        <div class="value">7</div>
+      </div>
+
+      <div class="card">
+        <h3>Taxa de Conversão</h3>
+        <div class="value">10%</div>
+      </div>
+
+      <div class="card">
+        <h3>Receita Potencial</h3>
+        <div class="value">R$ 524.910</div>
+      </div>
+
+      <div class="card">
+        <h3>Receita Ganha</h3>
+        <div class="value">R$ 53.330</div>
+      </div>
+    </section>
+
+    <section class="insight">
+      <strong>Resumo executivo:</strong>
+      A Godytec possui um funil B2B simulado com 100 leads de consultórios odontológicos.
+      A análise permite identificar gargalos do pipeline, canais mais eficientes, campanhas com maior volume
+      e oportunidades comerciais prioritárias.
+    </section>
+
+    <h2 class="section-title">Gráficos do Funil Comercial</h2>
+
+    <section class="chart-grid">
+      <div class="chart-card">
+        <h2>Leads por Etapa do Pipeline</h2>
+        <img src="../analysis/charts/leads_by_pipeline_stage.png" alt="Leads por etapa do pipeline">
+      </div>
+
+      <div class="chart-card">
+        <h2>Leads por Origem</h2>
+        <img src="../analysis/charts/leads_by_source.png" alt="Leads por origem">
+      </div>
+
+      <div class="chart-card">
+        <h2>Receita Potencial por Etapa</h2>
+        <img src="../analysis/charts/revenue_by_pipeline_stage.png" alt="Receita potencial por etapa">
+      </div>
+
+      <div class="chart-card">
+        <h2>Top Campanhas por Leads</h2>
+        <img src="../analysis/charts/top_campaigns_by_leads.png" alt="Top campanhas por leads">
+      </div>
+
+      <div class="chart-card">
+        <h2>Motivos de Perda</h2>
+        <img src="../analysis/charts/lost_reasons.png" alt="Motivos de perda">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Projeto de análise de dados criado no VS Code com Python, pandas, matplotlib, Git e GitHub.
+  </footer>
+</body>
+</html>
