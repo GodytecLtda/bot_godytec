@@ -1,0 +1,15 @@
+relationship 2cd4b195-dc4c-48af-8146-993492133f8d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: godytec_ghl_clinic_leads.created_date
+	toColumn: LocalDateTable_1627940b-7c41-485c-a437-6e91e36f8a86.Date
+
+relationship 8058f7b8-006f-43c5-a5b3-12c16c329a71
+	joinOnDateBehavior: datePartOnly
+	fromColumn: godytec_ghl_clinic_leads.last_activity_date
+	toColumn: LocalDateTable_7dc2bbd4-8f05-41b4-8b77-6c62d54d3bc4.Date
+
+relationship 3d0290ea-f3f2-4955-9e80-a1baec5bc4fa
+	joinOnDateBehavior: datePartOnly
+	fromColumn: godytec_ghl_clinic_leads.next_follow_up_date
+	toColumn: LocalDateTable_f8970ff7-c495-47b4-96e6-bf9cc0c1a7c9.Date
+

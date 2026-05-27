@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "7ebfe30fdcc290dd0eda",
+  "position": {
+    "x": 454.89371865297352,
+    "y": 348.50728445187485,
+    "z": 10,
+    "height": 163.8595653212324,
+    "width": 236.00668736565561,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "godytec_ghl_clinic_leads"
+                    }
+                  },
+                  "Property": "Average Close Probability"
+                }
+              },
+              "queryRef": "godytec_ghl_clinic_leads.Average Close Probability",
+              "nativeQueryRef": "Average Close Probability"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "godytec_ghl_clinic_leads"
+                  }
+                },
+                "Property": "Average Close Probability"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

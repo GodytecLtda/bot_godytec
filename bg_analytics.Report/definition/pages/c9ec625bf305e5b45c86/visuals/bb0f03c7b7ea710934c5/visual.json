@@ -1,0 +1,90 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "bb0f03c7b7ea710934c5",
+  "position": {
+    "x": 690.90040601862916,
+    "y": 524.59517554334843,
+    "z": 12,
+    "height": 165.08239789825652,
+    "width": 558.83448770002394,
+    "tabOrder": 12
+  },
+  "visual": {
+    "visualType": "barChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "godytec_ghl_clinic_leads"
+                    }
+                  },
+                  "Property": "lead_source"
+                }
+              },
+              "queryRef": "godytec_ghl_clinic_leads.lead_source",
+              "nativeQueryRef": "lead_source",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "godytec_ghl_clinic_leads"
+                    }
+                  },
+                  "Property": "Total Leads"
+                }
+              },
+              "queryRef": "godytec_ghl_clinic_leads.Total Leads",
+              "nativeQueryRef": "Total Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "godytec_ghl_clinic_leads"
+                  }
+                },
+                "Property": "Total Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Leads por Origem'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

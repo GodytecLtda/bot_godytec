@@ -10,5 +10,13 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
+annotation PBI_QueryOrder = ["godytec_ghl_clinic_leads"]
+
+ref table godytec_ghl_clinic_leads
+ref table DateTableTemplate_4d83ed98-de05-48d5-8679-fbbe36b9ba81
+ref table LocalDateTable_1627940b-7c41-485c-a437-6e91e36f8a86
+ref table LocalDateTable_7dc2bbd4-8f05-41b4-8b77-6c62d54d3bc4
+ref table LocalDateTable_f8970ff7-c495-47b4-96e6-bf9cc0c1a7c9
+
 ref cultureInfo pt-BR
 

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "5a0804cf0e6df16b099c",
+  "position": {
+    "x": 690.90040601862916,
+    "y": 348.50728445187485,
+    "z": 13,
+    "height": 165.08239789825652,
+    "width": 550.274659660855,
+    "tabOrder": 13
+  },
+  "visual": {
+    "visualType": "barChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "godytec_ghl_clinic_leads"
+                    }
+                  },
+                  "Property": "pipeline_stage"
+                }
+              },
+              "queryRef": "godytec_ghl_clinic_leads.pipeline_stage",
+              "nativeQueryRef": "pipeline_stage",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "godytec_ghl_clinic_leads"
+                    }
+                  },
+                  "Property": "Potential Revenue"
+                }
+              },
+              "queryRef": "godytec_ghl_clinic_leads.Potential Revenue",
+              "nativeQueryRef": "Potential Revenue"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "godytec_ghl_clinic_leads"
+                  }
+                },
+                "Property": "Potential Revenue"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Receita potencial por Etapa do Pipeline'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

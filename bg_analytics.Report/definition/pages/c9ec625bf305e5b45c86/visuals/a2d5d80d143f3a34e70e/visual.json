@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.9.0/schema.json",
+  "name": "a2d5d80d143f3a34e70e",
+  "position": {
+    "x": 313.04513971817534,
+    "y": 169.973728206353,
+    "z": 3,
+    "height": 178.53355624552185,
+    "width": 156.52256985908767,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "godytec_ghl_clinic_leads"
+                    }
+                  },
+                  "Property": "Lost Leads"
+                }
+              },
+              "queryRef": "godytec_ghl_clinic_leads.Lost Leads",
+              "nativeQueryRef": "Lost Leads"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "godytec_ghl_clinic_leads"
+                  }
+                },
+                "Property": "Lost Leads"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
